@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsive</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar, .footer {
+            background-color: #000;
+        }
+        .container {
+            padding: 20px;
+        }
+        .image-button {
+            margin-bottom: 20px;
+        }
+        .image-button img {
+            max-width: 100%;
+            height: auto;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-image: fill 0 linear-gradient(#0003,#0003);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .boton {
+	        background-color: #4A078C; /* Color de fondo */
+	        border: none; /* Sin borde */
+	        color: white; /* Color del texto */
+	        padding:20px 32px; /* Espaciado interno */
+	        text-align: center; /* Alineación del texto */
+	        text-decoration: none; /* Sin subrayado */
+	        display: inline-block; /* Mostrar como elemento en línea */
+	        font-size: 16px; /* Tamaño del texto */
+	        margin: 4px 2px; /* Margen externo */
+	        cursor: pointer; /* Cursor al pasar sobre el botón */
+	        border-radius: 8px; /* Bordes redondeados */
+	        text-decoration: none;
+	        overflow: hidden;
+	        transition: 0.2s;
+            width: 100%;
+}
+.boton:hover{
+	background: #4A078C;
+	box-shadow: 0 0 10px #590844, 0 0 40px #EE0FF2, 0 0 80px #670FBF;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="img/Stream (1).png" alt="Logo" style="max-width: 100px;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Pagina Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acercade.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/Stream (1).png" alt="Imagen 1">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/Stream (1).png" alt="Imagen 2">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/Stream (1).png" alt="Imagen 3">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video1.mp4" controls mute>video 1</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 4">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 5">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 6">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video2.mp4" controls mute>video 2</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video1.mp4">video 1</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video2.mp4">video 2</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video1.mp4">video 1</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video2.mp4">video 2</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video1.mp4">video 1</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="video/video2.mp4">video 2</iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 7">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 8">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-button">
+                    <img src="img/streaming.jpeg" alt="Imagen 9">
+                    <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="img/Stream (1).png" alt="Logo">
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#" class="social-icon"><img src="img/facebook.jpg" alt="Facebook" width="250"></a>
+                <a href="#" class="social-icon"><img src="img/whatsapp.jpg" alt="whatsapp" width="150"></a>
+                <a href="#" class="social-icon"><img src="img/instagram.jpg" alt="Instagram" width="250"></a>
+                <a href="#" class="social-icon"><img src="img/gmail.jpg" alt="gmail" width="150"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#" class="social-icon"><img src="img/tiktoc.jpg" alt="tiktoc" width="130"></a>
+                <a href="#" class="social-icon"><img src="img/teledono.jpg" alt="telefono" width="130"></a>
+                
+            </div>
+            <div class="contact-info">
+                <p>Correo electrónico: streem.tvoficial@gmail,com</p>
+                <p>Teléfono: +57 (314) 3946784</p>
+                <p>Dirección: Bogotá, Colombia</p>
+            </div>
+
+    <footer>
+        <div class="container">
+            <p>Todos los derechos reservados &copy; 2024 StreamTV</p>
+        </div>
+    </footer>
+
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
