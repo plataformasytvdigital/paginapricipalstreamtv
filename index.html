@@ -1,59 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Streamtv</title>
+    <title>StreamTV</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="website icon" type="png" href="img/Stream (1).png">
     <style>
         body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            padding: 0;
+            background-color: black;
+            color: white;
         }
-
+        .navbar {
+            background-color: black !important;
+        }
         .navbar-brand {
-            font-size: 24px;
-            color: #000;
+            color: white !important;
         }
-
-        header {
-            background-color: #000, #590844, #EE0FF2, #4A078C, #670FBF, #1DDDF2;
-            padding: 20px 0;
+        .nav-link {
+            color: white !important;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .jumbotron {
+            background-color: black;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .btn-outline-light {
+            border-color: white !important;
+            color: white !important;
+        }
+        .footer {
+            background-color: black;
+            color: white;
             padding: 20px;
         }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .image {
-            margin-bottom: 20px;
-            position: relative;
-            border-image: fill 0 linear-gradient (#0003, #0003);
-        }
-
-        .image img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border-image: fill 0 linear-gradient (#0003, #0003);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-            max-height: 100%;
+        a{
+            font-size: 30px;
         }
 
         .boton {
@@ -78,130 +68,121 @@
 	box-shadow: 0 0 10px #590844, 0 0 40px #EE0FF2, 0 0 80px #670FBF;
 }
 
-        footer {
-            background-color: #000;
-            padding: 20px 0;
-            text-align: center;
-        }
+.menufooter a{
+    font-size: 20px;
+    text-align: center;
+}
 
-        a{
-            font-size: 30px;
-            color: #590844;
-            background-color: #050505;
-        }
 
-        p{
-            color: white;
-        }
+
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="img/Stream (1).png" alt="Logo" style="max-width: 100px;">
-                    <h1 class="text-uppercase"></h1>
-                </div>
-                <div class="col-md-6">
-                    <nav class="navbar navbar-expand-lg navbar-dark">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="streaming.html">Streaming</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="acercade.html">Acerca de</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=""></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contacto.html">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
 
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <section>
-            <h2></h2>
-            <div class="gallery">
-                <div class="image">
-                    <img src="img/PLANES HOGAR (1).png" alt="Imagen 1">
-                    <div class="product__item__text">
-                        <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
-                        <h5><a>
-                </div>
-                <div class="image">
-                    <img src="img/streaming.jpeg" alt="Imagen 2">
-                    <div class="product__item__text">
-                        <a href="streaming.html" class="boton">COMPRAR AHORA</a>
-                        <h5><a>
-                </div>
-                <div class="image">
-                    <img src="img/imagen3.jpg" alt="Imagen 3">
-                    <div class="product__item__text">
-                        <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
-                        <h5><a>
-                </div>
-                <div class="image">
-                    <img src="img/imagen4.jpg" alt="Imagen 4">
-                    <div class="product__item__text">
-                        <a href="https://wa.link/hcvpwd" class="boton">COMPRAR AHORA</a>
-                        <h5><a>
-                </div>
-            </div>
-        </section>
+        <img src="img/Stream (1).png" alt="Logo" style="max-width: 100px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="acercade.html">Acerca</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="streaming.html">Streaming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <footer>
-        <div class="footer-content">
-            <div class="logo">
-                <img src="img/Stream (1).png" alt="Logo">
-            </div>
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="streaming.html">Streaming</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Bienvenido</h1>
+    <p class="lead">"¡Estamos emocionados de tenerte aquí en StreamTV! Prepárate para disfrutar de una experiencia de entretenimiento inolvidable."</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="img/planeshogar.png" alt="Imagen 1">
+                <a href="https://wa.link/hcvpwd" class="boton">IR AHORA</a>
             </div>
         </div>
-    </footer>
-    <footer>
-        <div class="footer-content">
-            <div class="social-media">
-                <a href="#" class="social-icon"><img src="img/facebook.jpg" alt="Facebook" width="250"></a>
-                <a href="#" class="social-icon"><img src="img/whatsapp.jpg" alt="whatsapp" width="150"></a>
-                <a href="#" class="social-icon"><img src="img/instagram.jpg" alt="Instagram" width="250"></a>
-                <a href="#" class="social-icon"><img src="img/gmail.jpg" alt="gmail" width="150"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="#" class="social-icon"><img src="img/tiktoc.jpg" alt="tiktoc" width="130"></a>
-                <a href="#" class="social-icon"><img src="img/teledono.jpg" alt="telefono" width="130"></a>
-                
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="img/STREAMING2.png" alt="Imagen 2">
+                <a href="streaming.html" class="boton">IR AHORA</a>
             </div>
-            <div class="contact-info">
-                <p>Correo electrónico: streem.tvoficial@gmail,com</p>
-                <p>Teléfono: +57 (314) 3946784</p>
-                <p>Dirección: Bogotá, Colombia</p>
-            </div>
-
-    <footer>
-        <div class="container">
-            <p>Todos los derechos reservados &copy; 2024 StreamTV</p>
         </div>
-    </footer>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="img/img1.png" alt="Imagen 3">
+                 <a href="https://wa.link/hcvpwd" class="boton">IR AHORA</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="img/img1.png" alt="Imagen 4">
+                 <a href="https://wa.link/hcvpwd" class="boton">IR AHORA</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<footer>
+    <div class="footer-content">
+        <div class="logo">
+            <img src="img/Stream (1).png" alt="Logo">
+        </div>
+        <div class="footer-menu">
+            <ul class="menufooter">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="streaming.html">Streaming</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</footer>
+<footer>
+    <div class="footer-content">
+        <div class="social-media">
+            <a href="#" class="social-icon"><img src="img/facebook.jpg" alt="Facebook" width="250"></a>
+            <a href="#" class="social-icon"><img src="img/whatsapp.jpg" alt="whatsapp" width="150"></a>
+            <a href="#" class="social-icon"><img src="img/instagram.jpg" alt="Instagram" width="250"></a>
+            <a href="#" class="social-icon"><img src="img/gmail.jpg" alt="gmail" width="150"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="social-icon"><img src="img/tiktoc.jpg" alt="tiktoc" width="130"></a>
+            <a href="#" class="social-icon"><img src="img/teledono.jpg" alt="telefono" width="130"></a>
+            
+        </div>
+        <div class="contact-info">
+            <p>Correo electrónico: streem.tvoficial@gmail,com</p>
+            <p>Teléfono: +57 (314) 3946784</p>
+            <p>Dirección: Bogotá, Colombia</p>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<footer>
+    <div class="container">
+        <p>Todos los derechos reservados &copy; 2024 StreamTV</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
