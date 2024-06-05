@@ -89,6 +89,19 @@ footer {
     margin-bottom: 0; /* Elimina el espacio inferior del último párrafo */
 }
 
+li a{
+    text-decoration: none;
+    color: #fdfbfb;
+    font-size: 20px;
+    position: relative;
+}
+
+li a:hover{
+    text-shadow: 0 0 50px #ff00ff, 0 0 50px #ff00ff, 0 0 90px #ff00ff, 0 0 100px #ff00ff, 0 0 100px #ff00ff; /* Efecto de luz de neón */
+}
+
+
+
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     .footer-content {
