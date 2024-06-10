@@ -75,6 +75,35 @@
     text-align: center;
 }
 
+.menu-container {
+      background-color: black;
+      padding: 20px;
+    }
+    .menu-item {
+      margin-bottom: 10px;
+    }
+    .menu-link {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .menu-link:hover {
+      background-color: black;
+    }
+    /* Estilos adicionales para el menú desplegable */
+    @media (max-width: 768px) {
+      .dropdown-menu {
+        position: static !important;
+        width: 100%;
+        text-align: center;
+        background-color: #080808;
+      }
+    }
+
+
 
 
 
@@ -98,9 +127,40 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Pgina Principal</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movistar etrato 1y2.html">Estrato 1 y 2</a>
+                </li>
             </ul>
         </div>
     </div>
+    <div class="container-fluid menu-container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <ul class="list-unstyled menu-list">
+              <li class="menu-item">
+                <a href="#" class="menu-link"></a>
+              </li>
+              <li class="menu-item dropdown">
+                <a href="#" class="menu-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Planes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#internetfibra">Internet</a>
+                  <a class="dropdown-item" href="#trio">Trio Movistar</a>
+                  <a class="dropdown-item" href="#packfibra">Internet y TV sin Deco</a>
+                  <a class="dropdown-item" href="#packduo">Pck Duo Fibra y Telefonia </a>
+                  <a class="dropdown-item" href="#duo">Duo Internet y Telefonia</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"></a>
+                </div>
+              </li>
+              <li class="menu-item">
+                <a href="index.html" class="menu-link"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 </nav>
 
 <div class="jumbotron text-center">
@@ -109,7 +169,9 @@
 </div>
 
      <!--INTERNET-->
+     <section id="internetfibra">
      <h1 style="text-align: center;" >INTERNET</h1>
+    </section>
 <div class="container">
     <div class="row">
         <div class="col-md-6">
@@ -138,10 +200,13 @@
                  <a href="https://wa.link/hcvpwd" class="boton">COMPRAR</a>
             </div>
         </div>
+        
     
 
         <!--TRIO MOVISTAR-->
+        <section id="trio">
         <h1 style="text-align: center; font-size: 60px;" >TRIO MOVISTAR</h1>
+    </section>
     <div class="col-md-6">
         <div class="image-container">
             <img src="img/movistar/MOVISTAR 3 AL 6/trio 1.png" alt="Imagen 5">
@@ -180,7 +245,9 @@
     </div>
 
         <!--PACK FIBRA-->
+        <section id="packfibra">
         <h1 style="text-align: center;">INTERNET Y TV SIN DECO</h1>
+    </section>
     <div class="col-md-6">
         <div class="image-container">
             <img src="img/movistar/MOVISTAR 3 AL 6/pack fibra 1.png" alt="Imagen 10">
@@ -201,7 +268,9 @@
     </div>
 
     <!--PACK DUO-->
+    <section id="packduo">
     <h1 style="text-align: center;" >PACK DUO FIBRA Y TELEFONIA</h1>
+    </section>
     <div class="col-md-6">
         <div class="image-container">
             <img src="img/movistar/MOVISTAR 3 AL 6/pack duo 1.png" alt="Imagen 13">
@@ -222,7 +291,9 @@
     </div>
 
     <!--DUO MOVISTAR-->
+    <section id="duo">
     <h1 style="text-align: center;" >DUO INTERNET Y TELEFONIA</h1>
+</section>
     <div class="col-md-6">
         <div class="image-container">
             <img src="img/movistar/MOVISTAR 3 AL 6/duo 1.png" alt="Imagen 16">
@@ -256,7 +327,7 @@
         <div class="footer-menu">
             <ul class="menufooter">
                 <li><a href="index.html">Pagina Principal</a></li>
-                <li><a href="movistar etrato 1y2.html">Inicio</a></li>
+                <li><a href="movistar estrato 3 al 6">Inicio</a></li>
             </ul>
             
         </div>
